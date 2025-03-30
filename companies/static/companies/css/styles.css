@@ -1,0 +1,164 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown__select {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.dropdown__select:hover,
+.dropdown__select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem; /* Reduced from 2rem */
+}
+
+/* Company Details Section */
+.company-details {
+    background: #fff;
+    padding: 1.5rem; /* Reduced from 2rem */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.company-title {
+    font-size: 1.75rem; /* Reduced from 2rem */
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.company-detail__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.company-detail__grid > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.company-detail__grid p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.company-detail__grid strong {
+    color: #222;
+    font-weight: 600;
+}
+
+.company-details a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.company-details a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Charts Section */
+#charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+#charts > div {
+    flex: 1 1 45%;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+}
+
+#cityChart, #jobFamilyChart {
+    width: 100% !important; /* Override inline width */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* Adjusted from 300px for tablets */
+    main {
+        padding: 1rem;
+    }
+
+    .company-detail__grid {
+        grid-template-columns: 1fr;
+    }
+
+    #charts > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .company-title {
+        font-size: 1.5rem;
+    }
+
+    .company-detail__grid p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Remove duplicate media query and adjust if needed */
+@media (max-width: 480px) { /* Optional: for smaller mobile devices */
+    .company-title {
+        font-size: 1.25rem;
+    }
+
+    .company-detail__grid p {
+        font-size: 0.85rem;
+    }
+}

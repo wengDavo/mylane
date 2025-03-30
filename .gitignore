@@ -1,0 +1,32 @@
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore environment variables and virtual environments
+.env
+venv/
+*.env
+
+# Ignore Django migrations (optional)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Ignore SQLite database
+db.sqlite3
+
+# Ignore logs and temporary files
+*.log
+*.pot
+*.pyc
+.DS_Store
+*.swp
+*.swo
+
+# Ignore static and media files (if generated dynamically)
+staticfiles/
+media/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.iml
