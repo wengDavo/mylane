@@ -9,16 +9,14 @@
 ## Prerequisites
 Ensure you have the following installed:
 - Python (>=3.8)
-- Django
 - pip (Python package manager)
-- SQLite (default database for django, no additional setup required)
 
 ## Installation & Setup
 Follow these steps to set up and run the project:
 
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/your-username/mylane.git
+   git clone https://github.com/wengDavo/mylane.git
    cd mylane
    ```
 
@@ -35,12 +33,13 @@ Follow these steps to set up and run the project:
 
 4. **Run Migrations:**
    ```sh
+   python manage.py makemigrations
    python manage.py migrate
    ```
 
 5. **Load Sample Data:** (Mandatory Step)
    ```sh
-   python manage.py import_companies
+   python manage.py import_companies_data
    ```
 
 6. **Run the Development Server:**
